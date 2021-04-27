@@ -1,9 +1,18 @@
 import "./App.css";
 
+//Components
+import Section from "./components/Section";
+
+//Import datas
+import data from "./data.json";
+
 function App() {
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+    <div className="App">
+      <img className="logo" src="logo-netflix.png" alt="logo-netflix" />
+      {data.map((elem, index) => {
+        return <Section key={index} category={elem.category} />;
+      })}
     </div>
   );
 }
