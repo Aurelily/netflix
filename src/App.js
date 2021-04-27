@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <img className="logo" src="logo-netflix.png" alt="logo-netflix" />
       {data.map((elem, index) => {
-        return <Section key={index} category={elem.category} />;
+        return <Section key={index} element={elem} />;
       })}
     </div>
   );

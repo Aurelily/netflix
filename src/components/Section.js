@@ -4,8 +4,8 @@ import Movies from "./Movies";
 const Section = (props) => {
   return (
     <div className="section">
-      <Category category={props.category} />
-      <Movies />
+      <Category category={props.element.category} />
+      <Movies images={props.element.images} />
     </div>
   );
 };
